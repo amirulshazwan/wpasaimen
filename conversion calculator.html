@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="calculator.js " defer></script>
+	<title>Calculator</title>
+
+</head>
+<body>
+    <header>
+        <h1>Conversion Calculator</h1>
+        <p>Select a conversion type and use the calculator below.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="conversion page.html"><i class="fas fa-exchange-alt"></i>Conversions</a></li>
+            <li><a href="conversion calculator.html"><i class="fas fa-calculator"></i> Calculator</a></li>
+        </ul>
+    </nav>
+    
+	
+	<section id="content">
+        <div id="currencyConversion" class="conversionSection">
+            <h2>Currency Conversion</h2>
+            <label for="amountCurrency">Amount:</label>
+            <input type="text" id="amountCurrency" placeholder="Enter amount">
+            <label for="fromCurrency">From Currency:</label>
+            <select id="fromCurrency">
+				<option value="myr">MYR</option>
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="gbp">GBP</option>            
+            </select>
+            <label for="toCurrency">To Currency:</label>
+            <select id="toCurrency">
+                <option value="myr">MYR</option>
+				<option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="gbp">GBP</option>
+            </select>
+            <button onclick="calculateCurrencyConversion()">Calculate</button>
+            <p id="resultCurrency">Result: </p>
+        </div>
+	<hr>
+        <div id="measurementConversionContainer" class="conversionSection">
+            <h2>Measurement Conversion</h2>
+            <label for="amountMeasurement">Amount:</label>
+            <input type="text" id="amountMeasurement" placeholder="Enter amount">
+            <label for="fromUnit">From Unit:</label>
+            <select id="fromUnit">
+                <option value="meter">Meter</option>
+                <option value="centimeter">Centimeter</option>
+                <option value="kilometer">Kilometer</option>
+				<option value="inch">Inch</option>
+                <option value="foot">Foot</option>
+                <option value="yard">Yard</option>
+				<option value="milliliter">Milliliter</option>
+                <option value="liter">Liter</option>
+                <option value="cubicMeter">Cubic Meter</option>
+            </select>
+            <label for="toUnit">To Unit:</label>
+            <select id="toUnit">
+                <option value="meter">Meter</option>
+                <option value="centimeter">Centimeter</option>
+                <option value="kilometer">Kilometer</option>
+				<option value="inch">Inch</option>
+                <option value="foot">Foot</option>
+                <option value="yard">Yard</option>
+				<option value="milliliter">Milliliter</option>
+                <option value="liter">Liter</option>
+                <option value="cubicMeter">Cubic Meter</option>
+            </select>
+            <button onclick="calculateMeasurementConversion()">Calculate</button>
+            <p id="resultMeasurement">Result: </p>
+        </div>
+	<hr>
+        <div id="weightConversionContainer" class="conversionSection">
+            <h2>Weight Conversion</h2>
+            <label for="amountWeight">Amount:</label>
+            <input type="text" id="amountWeight" placeholder="Enter amount">
+            <label for="fromWeight">From Unit:</label>
+            <select id="fromWeight">
+                <option value="gram">Gram</option>
+                <option value="kilogram">Kilogram</option>
+                <option value="pound">Pound</option>
+            </select>
+            <label for="toWeight">To Unit:</label>
+            <select id="toWeight">
+                <option value="gram">Gram</option>
+                <option value="kilogram">Kilogram</option>
+                <option value="pound">Pound</option>
+            </select>
+            <button onclick="calculateWeightConversion()">Calculate</button>
+            <p id="resultWeight">Result: </p>
+        </div>
+	<hr>
+        <div id="characterConversionContainer" class="conversionSection">
+            <h2>Character Conversion</h2>
+            <label for="textInput">Text Input:</label>
+            <input type="text" id="textInput" placeholder="Enter text">
+            <label for="conversionType">Conversion Type:</label>
+            <select id="conversionType">
+                <option value="uppercase">Uppercase</option>
+                <option value="lowercase">Lowercase</option>
+            </select>
+            <button onclick="calculateCharacterConversion()">Convert</button>
+            <p id="resultCharacter">Result: </p>
+        </div>
+	<hr>
+        <div id="temperatureConversionContainer" class="conversionSection">
+            <h2>Temperature Conversion</h2>
+            <label for="temperatureInput">Temperature Input:</label>
+            <input type="text" id="temperatureInput" placeholder="Enter temperature">
+            <label for="fromTemperature">From Unit:</label>
+            <select id="fromTemperature">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+            <label for="toTemperature">To Unit:</label>
+            <select id="toTemperature">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+            <button onclick="calculateTemperatureConversion()">Convert</button>
+            <p id="resultTemperature">Result: </p>
+        </div>
+	<hr>
+        <div id="timeConversionContainer" class="conversionSection">
+            <h2>Time Conversion</h2>
+            <label for="timeInput">Time Input:</label>
+            <input type="text" id="timeInput" placeholder="Enter time">
+            <label for="fromTime">From Unit:</label>
+            <select id="fromTime">
+                <option value="hours">Hours</option>
+                <option value="minutes">Minutes</option>
+                <option value="seconds">Seconds</option>
+            </select>
+            <label for="toTime">To Unit:</label>
+            <select id="toTime">
+                <option value="hours">Hours</option>
+                <option value="minutes">Minutes</option>
+                <option value="seconds">Seconds</option>
+            </select>
+            <button onclick="calculateTimeConversion()">Convert</button>
+            <p id="resultTime">Result: </p>
+        </div>
+    </section >
+	<footer>
+    <div class="footer-content">
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>Email: amiruljohar02@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 WPA ASSIGNMENT</p>
+    </div>
+</footer>
+	
+
+</body>
+</html>
+

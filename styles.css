@@ -1,0 +1,144 @@
+/* Resetting and General Styling */
+body {
+    font-family: 'Comic Sans MS';
+    background-color: #ffecb3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, section{
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+header:hover, nav:hover, section:hover, footer:hover {
+    transform: scale(1.02);
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: #ff6347;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6347;
+}
+
+/* Section Styling */
+section p {
+    font-size: 18px;
+    color: #777;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    color: #3498db;
+}
+
+/* Form Styling */
+label, input, select, button {
+    margin: 10px 0;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, button:focus {
+    border-color: #ff6347;
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Result Styling */
+p[id^="result"] {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ff6347;
+}
+
+
+/* ... (rest of the styles) */
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    color: #4CAF50;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #4CAF50;
+}
+
+/* ... (rest of the styles) */
